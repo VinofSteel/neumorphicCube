@@ -1,5 +1,7 @@
 # neumorphicCube
 
+Link do projeto: https://vinofsteel.github.io/neumorphicCube/
+
 Este projeto é um experimento que fiz em meu tempo livre no segundo módulo de ensino da Kenzie Academy Brasil, onde aprendi muito sobre CSS,
 especialmente o elemento position e sobre animações.
 
