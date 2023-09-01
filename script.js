@@ -2,13 +2,9 @@ const dice = document.querySelector('.dice');
 const button = document.querySelector('main button');
 
 const randomDice = () => {
-    const random = Math.floor(Math.random() * 10);
-
-    if (random >= 1 && random <= 6) {
-        rollDice(random);
-    } else {
-        randomDice();
-    }
+    const random = Math.floor(Math.random() * 6) + 1;
+    
+    rollDice(random);
 }
 
 const rollDice = (random) => {
@@ -24,7 +20,7 @@ const rollDice = (random) => {
     dice.style.animation = 'rolling 3s';
 
     setTimeout(() => {
-        if (diceTransforms.hasOwnProperty(random)) { dice.style.transform = diceTransforms[random]; } 
+        dice.style.transform = diceTransforms[random];
 
         dice.style.animation = 'none';
     }, 3015);
